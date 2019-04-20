@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEV-NX-JQn">
+                                <rect key="frame" x="191" y="235" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFT-Fe-GiS">
+                                <rect key="frame" x="126" y="696" width="177" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="darHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghx-0i-Hpk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trl-ZG-TdZ">
+                                <rect key="frame" x="153" y="278" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QFT-Fe-GiS" secondAttribute="bottom" constant="136" id="3KY-a9-Lhs"/>
+                            <constraint firstItem="aEV-NX-JQn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="191" id="FOv-AK-3KE"/>
+                            <constraint firstItem="QFT-Fe-GiS" firstAttribute="centerX" secondItem="aEV-NX-JQn" secondAttribute="centerX" id="G7u-SJ-2ma"/>
+                            <constraint firstItem="Trl-ZG-TdZ" firstAttribute="top" secondItem="aEV-NX-JQn" secondAttribute="bottom" constant="8" symbolic="YES" id="H2L-nJ-mOC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aEV-NX-JQn" secondAttribute="trailing" symbolic="YES" id="ex8-q9-jDR"/>
+                            <constraint firstItem="QFT-Fe-GiS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="mh3-lJ-BtX"/>
+                            <constraint firstItem="Trl-ZG-TdZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="264" id="sQD-rX-cop"/>
+                            <constraint firstItem="Trl-ZG-TdZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wzz-W1-eUL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mostrarHamburguesa" destination="Trl-ZG-TdZ" id="Wwt-JR-gWx"/>
+                        <outlet property="mostrarPais" destination="aEV-NX-JQn" id="4ZA-8X-GFU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
